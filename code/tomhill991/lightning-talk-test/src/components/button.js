@@ -1,4 +1,5 @@
 import React from 'react'
+import './button.css';
 
 class Buttons extends React.Component {
   constructor(props){
@@ -12,7 +13,6 @@ class Buttons extends React.Component {
     })
   }
 
-
    decrement = (e) => {
     this.setState({
       votes : this.state.votes - 1
@@ -20,10 +20,16 @@ class Buttons extends React.Component {
   }
   render(){
     return (
-      <div className="lt-buttons">
-      <button onClick={this.increment}>Up Vote Button Page: {this.state.votes}</button>
-      <button onClick={this.decrement}>Down Vote Button Page: {this.state.votes}</button>
+      <div className="lt-votes-container">
+        <div className="lt-votes-number">
+        <p>{this.state.votes}</p>
+        </div>
+          <div className="lt-buttons">
+            <button onClick={this.increment}>Up Vote Button </button>
+            <button onClick={this.decrement}>Down Vote Button </button>
+          </div>
       </div>
+
     )
   }
 }
