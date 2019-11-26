@@ -31,7 +31,7 @@ class LightningTalk extends React.Component {
           <div className="lt-title"> {title}</div>
           <div className="lt-description"> {description}</div>
         </div>
-      {/*increment is */}
+      {/*increment= and decrement= (defined as a prop of Buttons in Buttons class) equals the increment and decrement function of this (LightningTalk) component. This means the state of votes changes onClick of up-vote/down-vote buttons*/}
         <Buttons increment={this.increment} decrement={this.decrement} votes={this.state.votes}/>
       </div>
       )
