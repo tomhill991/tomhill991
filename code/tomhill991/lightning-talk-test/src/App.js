@@ -7,11 +7,12 @@ import SubmitForm from './components/submit-form.js'
 function App() {
     const lightningTalk = {
     title: "I will teach you to be rich",
-    description: "Secure your financial future with these 3 easy steps",
+    description: "Secure your financial future with these 3 easy steps"
   }
 
   // need to go over this array in order to display each lightning talk that has been added
-  const lightningTalkArray = [ lightningTalk, lightningTalk]
+  // const lightningTalkArray = [ lightningTalk, lightningTalk ]
+  // lightningTalkArray.forEach(lt => console.log(lt))
 
   return (
     <div>
